@@ -4,8 +4,18 @@ public class Turista {
     private String cpf;
     //Construtor padrão
     Turista(){}
+    // Sobrecarga do construtor
     Turista(String _nome){
+        this.nome = _nome; }
+    // Mais uma sobrecarga do construtor
+    Turista(String _nome) { this.nome = _nome; }
+    // Mais uma sobecarga do construtor
+    Turista(String _nome, String _cpf) {
         this.nome = _nome;
+        this.cpf = _cpf;
+    }
+
+    public Turista() {
 
     }
 
