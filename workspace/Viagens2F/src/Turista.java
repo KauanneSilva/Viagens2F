@@ -18,6 +18,7 @@ public class Turista {
     public Turista() {
 
     }
+}
 
 
     //Métodos
