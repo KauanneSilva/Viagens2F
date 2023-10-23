@@ -1,5 +1,6 @@
 public class Validacao {
-    public static String cpf(String s){
-        return s;
-    }
+    public static String cpf(String s) {
+
+    return String.valueOf(true);
+   }
 }
