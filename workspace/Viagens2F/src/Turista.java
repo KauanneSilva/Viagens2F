@@ -8,14 +8,13 @@ public class Turista {
     Turista(String _nome){
         this.nome = _nome; }
     // Mais uma sobrecarga do construtor
-    Turista(String _nome) { this.nome = _nome; }
-    // Mais uma sobrecarga do construtor
     Turista(String _nome, String _cpf) {
         this.nome = _nome;
         this.cpf = _cpf;
     }
 
     public Turista(Object nome) {
+        this.nome = nome.toString();
     }
 
     //Métodos
