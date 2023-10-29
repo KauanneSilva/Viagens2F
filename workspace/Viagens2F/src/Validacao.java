@@ -22,18 +22,6 @@ class Util {
             return false;
         }
 
-        char firstDigit = cpf.charAt(0);
-        boolean allDigitsAreSame = true;
-        for (int i = 1; i < 11; i++) {
-            if (cpf.charAt(i) != firstDigit) {
-                allDigitsAreSame = false;
-                break;
-            }
-        }
-        if (allDigitsAreSame) {
-            return false;
-        }
-
         int[] numbers = new int[11];
         for (int i = 0; i < 11; i++) {
             numbers[i] = Character.getNumericValue(cpf.charAt(i));
@@ -55,6 +43,4 @@ class Util {
 
         return true;
     }
-}
-
 }
